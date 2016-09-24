@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+basic_meditation:
   name: Basic Meditation
   description: This is a basic meditation class.
-  image_url: MyString.jpg
+  image_url: header.jpg
 
-two:
+advanced_meditation:
   name: Advanced Meditation
   description: This class is for more advanced practitioners.
-  image_url: MyString.jpg
+  image_url: header.jpg

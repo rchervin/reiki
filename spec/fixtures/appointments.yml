@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+<% 3.times do |i| %>
+  minimum_basic_meditation_<%=i %>:
+    session: minimum
+    status: unsold
+    price_cents: 1500
+
+  maximum_advanced_meditiation_<%=i %>:
+    session: maximum
+    status: unsold
+    price_cents: 1500
+<% end %>

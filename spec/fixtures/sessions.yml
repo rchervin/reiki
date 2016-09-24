@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  therapy: one
+minimum:
+  therapy: basic_meditation
   start_time: 2016-09-23 16:42:24
   end_time: 2016-09-23 16:42:24
-  max_appointments: 1
 
-two:
-  therapy: two
+maximum:
+  therapy: advanced_meditation
   start_time: 2016-09-23 16:42:24
   end_time: 2016-09-23 16:42:24
-  max_appointments: 1
