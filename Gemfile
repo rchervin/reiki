@@ -47,6 +47,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
   gem 'pry-rescue'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :test do
@@ -55,4 +56,5 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem "rspec-rails", :group => [:development, :test]
