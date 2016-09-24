@@ -1,2 +1,3 @@
 - @therapies.each do |therapy|
+  = image_tag(therapy.image_url, width: 500)
   %p= link_to therapy.name, therapy_path(therapy)

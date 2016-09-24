@@ -1,3 +1,5 @@
 = image_tag(@therapy.image_url, width: 500)
 %p= @therapy.name
 %p= @therapy.description
+
+= link_to 'See More Therapies', therapies_path
