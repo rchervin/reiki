@@ -17,7 +17,7 @@ meditation = Therapy.create(
 ActiveRecord::FixtureSet.create_fixtures(
     "#{Rails.root}/spec/fixtures", "therapies")
 ActiveRecord::FixtureSet.create_fixtures(
-    "#{Rails.root}/spec/fixtures", "sessions")
+    "#{Rails.root}/spec/fixtures", "bookings")
 ActiveRecord::FixtureSet.create_fixtures(
     "#{Rails.root}/spec/fixtures", "appointments")
 ActiveRecord::FixtureSet.create_fixtures(

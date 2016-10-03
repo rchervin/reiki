@@ -3,12 +3,12 @@
 
 <% 3.times do |i| %>
   minimum_basic_meditation_<%=i %>:
-    session: minimum
+    booking: minimum
     status: unsold
     price_cents: 1500
 
   maximum_advanced_meditiation_<%=i %>:
-    session: maximum
+    booking: maximum
     status: unsold
     price_cents: 1500
 <% end %>

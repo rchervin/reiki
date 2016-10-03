@@ -1,4 +1,4 @@
 class Therapy < ApplicationRecord
 
-  has_many :sessions
+  has_many :bookings
 end

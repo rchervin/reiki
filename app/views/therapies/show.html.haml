@@ -2,13 +2,13 @@
 %p= @therapy.name
 %p= @therapy.description
 
-/ - @therapy.sessions.each do |session|
-/   .div{id: session.id}
+/ - @therapy.bookings.each do |booking|
+/   .div{id: booking.id}
 /     .row
 /       = form_tag(shopping_cart_path, method: :patch) do
-/         = hidden_field_tag("session_id", session.id)
+/         = hidden_field_tag("booking_id", booking.id)
 /         .col-md-2
-/           h4= session.start_time.to_date.to_s(:long)
+/           h4= booking.start_time.to_date.to_s(:long)
 /         .col-md-1
 /           .form-group
 /             = select_tag("appointment_count",

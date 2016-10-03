@@ -14,25 +14,25 @@ ActiveRecord::Schema.define(version: 20160923234303) do
 
   create_table "appointments", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "session_id"
+    t.integer  "booking_id"
     t.integer  "status"
     t.integer  "access"
     t.integer  "price_cents",    default: 0,     null: false
     t.string   "price_currency", default: "USD", null: false
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
-    t.index ["session_id"], name: "index_appointments_on_session_id"
+    t.index ["booking_id"], name: "index_appointments_on_booking_id"
     t.index ["user_id"], name: "index_appointments_on_user_id"
   end
 
-  create_table "sessions", force: :cascade do |t|
+  create_table "bookings", force: :cascade do |t|
     t.integer  "therapy_id"
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer  "max_appointments"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.index ["therapy_id"], name: "index_sessions_on_therapy_id"
+    t.index ["therapy_id"], name: "index_bookings_on_therapy_id"
   end
 
   create_table "therapies", force: :cascade do |t|

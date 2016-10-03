@@ -2,17 +2,17 @@ require "rails_helper"
 
 describe "adding to cart" do
   fixtures :all
-  it "can add a session to a cart" do 
+  it "can add an appointment to a cart" do 
     login_as(users(:buyer), scope: :user)
     visit therapy_path(therapies(:basic_meditation))
-    session = therapies(:basic_meditation).sessions.first 
-    within("#session_#{session.id}") do
+    booking = therapies(:basic_meditation).bookings.first 
+    within("#booking_#{booking.id}") do
       select("2", from: "appointment_count")
       click_on("add-to-cart") 
     end
     expect(current_url).to match("cart") 
     within("#therapy_#{therapies(:basic_meditation).id}") do
-      within("#session_#{session.id}") do
+      within("#booking_#{booking.id}") do
         expect(page).to have_selector(".appointment_count", text: "2") 
         expect(page).to have_selector(".subtotal", text: "$30")
       end
